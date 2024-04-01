@@ -1,0 +1,20 @@
+#!/bin/bash
+source /home/oem/ws_livox/devel/setup.bash;
+roslaunch livox_ros_driver2 msg_MID360.launch & sleep 4;
+roslaunch fast_lio mapping_avia.launch & sleep 4;
+#source /home/oem/catkin_ws/devel/setup.bash;
+#roslaunch realsense2_camera rs_d400_and_t265.launch & sleep 1;
+source /home/oem/catkin_ws/devel/setup.bash;
+sudo chmod 777 /dev/ttyUSB0 & sleep 1;
+sudo chmod 777 /dev/ttyUSB1 & sleep 1;
+roslaunch mavros acfly.launch & sleep 1;
+roslaunch vision_to_mavros mid360_to_mavros.launch & sleep 1;
+rosrun drone_test restart & sleep 1;
+gnome-terminal -x bash -c "source /home/oem/catkin_ws/devel/setup.bash; rosrun drone_test yyy_drone wait" & sleep 1;
+gnome-terminal -x bash -c "source /home/oem/catkin_ws/devel/setup.bash; rosrun drone_test star_detection2 wait" & sleep 1;
+#rosrun drone_test tfcpp & sleep 1;
+rosrun drone_test tfcpp_takeoff & sleep 1;
+rosrun drone_test drone_speed & sleep 1;
+source /home/oem/catkin_ws_serial/devel/setup.bash;
+rosrun serial_port serial_port & sleep 1;
+wait;
