@@ -26,6 +26,7 @@ Electronic Design Competition for College Students (Question G)
 - **图像处理**：使用高性能NUC进行图像处理，提取火源位置等关键信息。
 - **定位传感器**：采用Livox Mid-360激光雷达进行路径规划和定位。
 - **地面协同**：消防车采用编码器与深度相机融合定位方案，实现自主定位和路径规划。
+- **核心代码**：/src/drone_test/yyy_drone.cpp
 
 ## 开发环境
 
