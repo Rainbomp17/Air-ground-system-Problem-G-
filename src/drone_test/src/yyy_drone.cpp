@@ -41,7 +41,6 @@
 #include <typeinfo>
 #include <tf/transform_listener.h>
 #include <geometry_msgs/TwistWithCovarianceStamped.h>
-
 using namespace cv;
 using namespace std;
 using namespace mavros_msgs;
