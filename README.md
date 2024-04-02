@@ -1,4 +1,4 @@
-# Air-ground-system-Problem-G-
+# Air-ground-system-Problem-G
 Electronic Design Competition for College Students (Question G)
 # 空地协同智能消防系统
 
