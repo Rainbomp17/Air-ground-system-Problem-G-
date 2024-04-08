@@ -35,13 +35,14 @@ Electronic Design Competition for College Students (Question G)
 - **编程语言**：C++
 - **图像处理库**：OpenCV
 - **通信框架**：ROS
-
+- **通信协议**：Mavlink
+- 
 ## 快速开始
 
 1. 克隆项目到本地
 2. 安装开发环境
-3. 编译代码：进入drone_test/，根据具体的硬件平台执行编译脚本
-4. 运行系统：按照用户手册进行系统组装和测试
+3. 编译代码：进入drone_test/
+4. 根据具体的硬件平台执行一键启动launch文件
 
 ## 贡献指南
 
