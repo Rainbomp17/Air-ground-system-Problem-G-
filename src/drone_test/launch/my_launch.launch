@@ -1,5 +1,0 @@
-<launch>
-
-    <node name="button" pkg="drone_test" type="button.py" output="screen"/>
-
-</launch>
