@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.0.2)
 project(drone_test)
 
-set(mavros_msgs_DIR /home/oem/catkin_ws_mavros/devel/share/mavros_msgs/cmake/)
 set(mavros_DIR /home/oem/catkin_ws_mavros/devel/share/mavros/cmake/)
+set(mavros_msgs_DIR /home/oem/catkin_ws_mavros/devel/share/mavros_msgs/cmake/)
 
 ## Compile as C++11, supported in ROS Kinetic and newer
 # add_compile_options(-std=c++11)
